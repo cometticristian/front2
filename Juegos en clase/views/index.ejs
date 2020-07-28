@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/javascripts/front.js"></script>
+</head>
+
+<body>
+  <h1>ADIVINAR</h1>
+
+  <h2 class="titleOne">Ingresa tu numero</h2>
+
+  <input type="text">
+  <button>ADIVINAR</button>
+
+  <h3>Chances: 5</h3>
+
+  <hr>
+  <br>
+
+  <h1>COLGADO</h1>
+
+  <button class="colgado">Jugar!</button>
+  <br>
+  <br>
+
+  <div style="display: flex;" class="container"></div>
+
+  <h2 class="hiddenPhrase"></h2>
+
+  <h3 class="chance">Chances: 5</h3>
+
+
+  <hr>
+  <br>
+  <h1>TATETI</h1>
+
+  <style>
+    .tateti {
+      width: 610px;
+      height: 610px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tateti .caja {
+      width: 200px;
+      height: 200px;
+      font-size: 150px;
+      color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .caja1 {
+      border-right: 2px solid red;
+      border-bottom: 2px solid red;
+    }
+
+    .caja5 {
+      border: 2px solid red;
+    }
+
+    .caja3 {
+      border-left: 2px solid red;
+      border-bottom: 2px solid red;
+    }
+
+    .caja7 {
+      border-right: 2px solid red;
+      border-top: 2px solid red;
+    }
+
+    .caja9 {
+      border-left: 2px solid red;
+      border-top: 2px solid red;
+    }
+  </style>
+  ​
+  <div class="tateti">
+    <div class="caja caja1"></div>
+    <div class="caja caja2"></div>
+    <div class="caja caja3"></div>
+    <div class="caja caja4"></div>
+    <div class="caja caja5"></div>
+    <div class="caja caja6"></div>
+    <div class="caja caja7"></div>
+    <div class="caja caja8"></div>
+    <div class="caja caja9"></div>
+  </div>
+
+  <hr>
+  <br>
+  <h1>PINTAR</h1>
+
+  <style>
+    .dad {
+      width: 500px;
+      height: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .picker {
+      width: 50px;
+      height: 50px;
+      border: 2px black solid;
+      margin-bottom: 6px;
+    }
+
+    .pinter {
+      width: 50px;
+      height: 50px;
+      border: 2px black solid;
+      margin-bottom: 6px;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+  </style>
+  <div class="dad">
+    <div class="a">
+      <div class="picker blue" id="blue"></div>
+      <div class="picker red" id="red"></div>
+      <div class="picker green" id="green"></div>
+      <div class="picker yellow" id="yellow"></div>
+    </div>
+
+    <div class="b">
+      <div class="pinter"></div>
+      <div class="pinter"></div>
+      <div class="pinter"></div>
+      <div class="pinter"></div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
